@@ -1,3 +1,7 @@
 from django.contrib import admin
+# 関連モデルをインポート
+from .models import Item, WishList
 
-# Register your models here.
+# 管理サイトへのモデルの登録
+admin.site.register(Item)
+admin.site.register(WishList)
